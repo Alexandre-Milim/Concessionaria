@@ -47,6 +47,8 @@ input {
    }
 
    .input {
+    margin: 8px;
+    padding: 16px;
     color: white;
     background-color: #1f1c1c;
     max-width: 190px;
