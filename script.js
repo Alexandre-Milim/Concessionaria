@@ -70,8 +70,8 @@ function pesquisar() {
     html += "<li>Categoria: " + item.categoria + "</li>"
     html += "<li>Preço: R$" + item.preço + "</li>"
     html += "<img src='img/" + item.img + "' />"
-    html += "<button onclick='modificar("+ index +")'>modificar</buttton>"
-    html += "<button onclick='remover("+ index +")''>remover</buttton>"
+    html += "<button onclick='modificar("+ index +")' class='bottone1'>modificar</buttton>"
+    html += "<button onclick='remover("+ index +")'' class='bottone1'>remover</buttton>"
     html += "</ul></table></div>"
   })
 
