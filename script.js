@@ -42,6 +42,13 @@ let Produtos = {
       preço: "27,24",
       img: "6.png",
     },
+    {
+      nome: "Nicolaskkkkk ",
+      descricao: "careca",
+      categoria: "Nicolas",
+      preço: " De graçakkkk",
+      img: "9.png",
+    },
   ],
   adicionar() {
     return "O item foi adicionado com sucesso"
