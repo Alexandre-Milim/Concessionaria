@@ -55,27 +55,25 @@ let Produtos = {
 }
 
 let formModifificar = document.getElementById("modificar")
-
-let btn = document.querySelector("#btn")
-
 let span = document.querySelector("#span")
 
 function pesquisar() {
-  var html = ""
+  var span = document.getElementById("span");
+  var html = "";
 
   Produtos.lista.forEach((item, index) => {
-    html += "<div><table><ul>"
-    html += "<li>Nome: " + item.nome + "</li>"
-    html += "<li>Descrição: " + item.descricao + "</li>"
-    html += "<li>Categoria: " + item.categoria + "</li>"
-    html += "<li>Preço: R$" + item.preço + "</li>"
-    html += "<img src='img/" + item.img + "' />"
-    html += "<button onclick='modificar("+ index +")' class='bottone1'>modificar</buttton>"
-    html += "<button onclick='remover("+ index +")'' class='bottone1'>remover</buttton>"
-    html += "</ul></table></div>"
-  })
+    html += "<div><table><ul>";
+    html += "<li>Nome: " + item.nome + "</li>";
+    html += "<li>Descrição: " + item.descricao + "</li>";
+    html += "<li>Categoria: " + item.categoria + "</li>";
+    html += "<li>Preço: R$" + item.preço + "</li>";
+    html += "<img src='img/" + item.img + "' />";
+    html += "<button onclick='modificar("+ index +")' class='bottone1'>modificar</buttton>";
+    html += "<button onclick='remover("+ index +")'' class='bottone1'>remover</buttton>";
+    html += "</ul></table></div>";
+  });
 
-  span.innerHTML = html
+  span.innerHTML = html;
 }
 
 function adicionar() {
@@ -152,4 +150,6 @@ function remover(key) {
     pesquisar()
 }
 
-btn.addEventListener("click", pesquisar)
+span.addEventListener("load", pesquisar);
+
+btn.addEventListener("click", pesquisar);
