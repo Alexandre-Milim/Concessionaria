@@ -46,7 +46,7 @@ let Produtos = {
       nome: "Nicolaskkkkk ",
       descricao: "careca",
       categoria: "Nicolas",
-      preço: " De graçakkkk",
+      preço: " Tem nem preço",
       img: "9.png",
     },
   ],
