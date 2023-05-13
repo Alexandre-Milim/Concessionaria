@@ -67,10 +67,14 @@ function pesquisar() {
     html += "<li>Descrição: " + item.descricao + "</li>";
     html += "<li>Categoria: " + item.categoria + "</li>";
     html += "<li>Preço: R$" + item.preço + "</li>";
-    html += "<img src='img/" + item.img + "' />";
-    html += "<button onclick='modificar("+ index +")' class='bottone1'>modificar</buttton>";
-    html += "<button onclick='remover("+ index +")'' class='bottone1'>remover</buttton>";
+    html += "<img src='img/" + item.img + "'style='padding: 8px;' />";
     html += "</ul></table></div>";
+
+    html += "<div>";    
+    html += "<button onclick='modificar("+ index +")' class='bottone1' style='margin: 2px;   margin-left: 60px;'>Modificar</buttton>";
+    html += "<button onclick='remover("+ index +")'' class='bottone1'>Remover</buttton>";
+    html += "</div> <hr>"
+    
   });
 
   span.innerHTML = html;
@@ -151,5 +155,3 @@ function remover(key) {
 }
 
 span.addEventListener("load", pesquisar);
-
-btn.addEventListener("click", pesquisar);
