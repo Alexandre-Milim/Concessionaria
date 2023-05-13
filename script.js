@@ -69,16 +69,17 @@ function pesquisar() {
   var html = "";
 
   Produtos.lista.forEach((item, index) => {
-    html += "<div><table><ul>";
-    html += "<li>Nome: " + item.nome + "</li>";
-    html += "<li>Descrição: " + item.descricao + "</li>";
-    html += "<li>Categoria: " + item.categoria + "</li>";
-    html += "<li>Preço: R$" + item.preço + "</li>";
+    html += "<div><table>";
+    html += "<div>Nome: " + item.nome + "</li>";
+    html += "<div>Descrição: " + item.descricao + "</li>";
+    html += "<div>Categoria: " + item.categoria + "</li>";
+    html += "<div>Preço: R$" + item.preço + "</li>";
+    html += "<div></li>";
     html += "<img src='img/" + item.img + "'style='padding: 8px;' />";
-    html += "</ul></table></div>";
+    html += "</table></div>";
 
     html += "<div>";    
-    html += "<button onclick='modificar("+ index +")' class='bottone1' style='margin: 2px;   margin-left: 60px;'>Modificar</buttton>";
+    html += "<button onclick='modificar("+ index +")' class='bottone1' style='margin: 0px;   margin-left: 6px;'>Modificar</buttton>";
     html += "<button onclick='remover("+ index +")'' class='bottone1'>Remover</buttton>";
     html += "</div> <hr>"
     
